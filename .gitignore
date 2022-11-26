@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/HSVLayer
+/HSVLayer/bin/Release
+/HSVLayer/obj
+/HSVLayer/Properties
