@@ -10,7 +10,7 @@ namespace HSVLayer.Patches
 		static void Prefix(FlyingScoreEffect ____flyingScoreEffectPrefab)
 		{
 			var hsv = ____flyingScoreEffectPrefab.gameObject;
-			int layer = 8;
+			int layer = 4;
 			hsv.layer = layer;
 			foreach (Transform t in hsv.GetComponentsInChildren<Transform>())
 			{
