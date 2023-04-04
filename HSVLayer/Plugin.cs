@@ -24,7 +24,6 @@ namespace HSVLayer
 		public void OnEnable()
 		{
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
-			Log.Warn("patched");
 		}
 
 		[OnDisable]
