@@ -1,0 +1,3 @@
+﻿<settings-container>
+	<dropdown-list-setting text="Layer" value="layer" options="layers" apply-on-change="true" />
+</settings-container>
