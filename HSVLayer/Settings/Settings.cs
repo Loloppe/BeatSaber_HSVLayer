@@ -15,9 +15,9 @@ namespace HSVLayer
         [UIValue("layer")]
         public virtual VisibilityLayer Layer { get; set; } = VisibilityLayer.UI;
         [UIValue("layers")]
-        public List<object> Layers => RandomizeOptions();
+        public List<object> Layers => Options();
 
-        private List<object> RandomizeOptions()
+        private List<object> Options()
         {
             List<object> list = new List<object>();
             foreach (var item in Enum.GetValues(typeof(VisibilityLayer)))
