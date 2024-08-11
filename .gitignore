@@ -6,3 +6,6 @@
 /HSVLayer/bin/Release
 /HSVLayer/obj
 /HSVLayer/Properties
+/.vs/BeatSaber_HSVLayer/v17
+/HSVLayer/.vs
+/HSVLayer/HSVLayer.csproj.user
