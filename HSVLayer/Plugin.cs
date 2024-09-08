@@ -28,14 +28,14 @@ namespace HSVLayer
 		public void OnEnable()
 		{
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
-            GameplaySetup.instance.AddTab("HSVLayer", "HSVLayer.UI.settings.bsml", Settings.Instance, MenuType.All);
+            GameplaySetup.Instance.AddTab("HSVLayer", "HSVLayer.UI.settings.bsml", Settings.Instance, MenuType.All);
         }
 
 		[OnDisable]
 		public void OnDisable()
 		{
 			harmony.UnpatchSelf();
-            GameplaySetup.instance.RemoveTab("HSVLayer");
+            GameplaySetup.Instance.RemoveTab("HSVLayer");
         }
 	}
 }
