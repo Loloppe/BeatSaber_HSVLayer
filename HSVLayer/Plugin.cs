@@ -28,6 +28,11 @@ namespace HSVLayer
 		public void OnEnable()
 		{
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
+			BeatSaberMarkupLanguage.Util.MainMenuAwaiter.MainMenuInitializing += MainMenuInit;
+        }
+
+		public void MainMenuInit()
+		{
             GameplaySetup.Instance.AddTab("HSVLayer", "HSVLayer.UI.settings.bsml", Settings.Instance, MenuType.All);
         }
 
